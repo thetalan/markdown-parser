@@ -20,6 +20,8 @@ public class MarkdownParse {
             currentIndex = closeParen + 1;
         }
 
+        System.out.println(currentIndex);
+
         return toReturn;
     }
 
