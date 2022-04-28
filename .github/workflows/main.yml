@@ -27,10 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Compile Markdown-parser
-        run: 
+        run: echo something something
       # Runs a set of commands using the runners shell
       - name: Run the JUnit Tests
-        run: 
-        javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java MarkdownParse.java
-        java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+        run: javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java MarkdownParse.java
+            java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 
